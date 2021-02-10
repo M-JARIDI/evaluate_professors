@@ -7,6 +7,7 @@
             $erreur=$message;
         require('view/log_in_form.php');
     }
+
     public function  logIn($username,$password){
         $student= UserRepository::findStudentByUsername($username,$password);
         if(count($student)==1){
@@ -28,6 +29,7 @@
         
         }
     }
+    
     public function  logOut(){
         session_start();
         session_unset();

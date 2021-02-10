@@ -90,6 +90,7 @@ if(isset($_GET['action'])){
         default :$userController->show404();
     }
 }
-else{
+else
+{
     $userController->showLoginForm(false);
 }

@@ -8,22 +8,29 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avis</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+          crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+            crossorigin="anonymous"></script>
     <style text="css">
         .center {
             width: 50%;
             margin: 0 auto;
         }
     </style>
+    <link rel="stylesheet" href="public/style.css" />
 </head>
 
 <body>
     <main >
 		<div class="container">
-            <a style="float: right;" href="index.php?action=logout">  <button  type="" class="btn btn-primary" name="deconnexion">Déconnexion </button></a>
+            <a style="float: right;" href="index.php?action=logout">
+            <button  type="" class="btn btn-danger" name="deconnexion" style="margin-top:10px">Déconnexion</button>
+            </a>
 			<div class="row">
-                <img class="img-fluid" src="public/img/eilco.png" alt="EILCO"/>
+                <a href="index.html"><img id="eilco-logo" class="img-fluid" src="public/img/eilco.png" alt="EILCO"/></a>
 			</div>
 			<div class="row">
 					<div class="card-body">

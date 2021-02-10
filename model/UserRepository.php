@@ -8,6 +8,7 @@ class UserRepository extends Repository {
         $result->execute(array($username,$password));
         return UserRepository::fetchData($result);
    }
+   
    public static function  findProfByUsername($username,$password){
     $connexion= UserRepository::connexion();
     $result=$connexion->prepare("select * from professeur where nom=? && prenom=? ");

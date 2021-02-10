@@ -5,31 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avis</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+          crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="public/style.css" />
 </head>
 <body>
     <main >
 		<div class="container">
-            <a style="float: right;" href="index.php?action=logout">  <button  type="" class="btn btn-primary" name="deconnexion">Déconnexion </button></a>
-            <a style="float: right;" href="index.php?action=rates_student_view">  <button  type="" class="btn btn-primary" name="deconnexion">Avis donnés </button></a>
+            <a style="float: right;" href="index.php?action=logout">
+                <button  type="" class="btn btn-danger" name="deconnexion" style="margin-top:10px">Déconnexion</button>
+            </a>
+            <a style="float: right; margin-right: 10px;" href="index.php?action=rates_student_view">
+                <button  type="" class="btn btn-primary" name="deconnexion" style="margin-top:10px">Avis donnés</button>
+            </a>
             <div class="row">
-                <img class="img-fluid" src="public/img/eilco.png" alt="EILCO"/>
-
-
+                <a href="index.html"><img id="eilco-logo" class="img-fluid" src="public/img/eilco.png" alt="EILCO"/></a>
 			</div>
 			<div class="row">
 					<div class="card-body">
 					  <h5 class="card-header"> Votre avis  </h5>
 						<form class="myform" action="index.php?action=save_rate" method="post">
             <?php
-                /*if(isset($_GET['message'])){
-                    if($_GET['message']=="success")
-                        echo "<div class=\"alert-success mt-2\"> Votre avis a été sauvegardé</div>";
-                    else if ($_GET['message']=="echec")
-                         echo "<div class=\"alert-danger mt-2\"> Votre avis n'a pas été sauvegardé,vous avez déja donné un avis pour ce prof</div>";
-
-                }*/
                 if($message=='failed')
                     echo "<div class=\"alert-danger mt-2\"> Votre avis n'a pas été sauvegardé,vous avez déja donné un avis pour ce prof</div>";
                 else if($message=='successfull')
