@@ -1,11 +1,11 @@
 <?php
-    require_once('exception/UserNotFoundException.php');
-    require_once("model/UserRepository.php");
+    require_once('src/exception/UserNotFoundException.php');
+    require_once("src/model/UserRepository.php");
     class UserController {
 
      public function  showLoginForm($message){
             $erreur=$message;
-        require('view/log_in_form.php');
+        require('src/view/log_in_form.php');
     }
 
     public function  logIn($username,$password){
@@ -36,6 +36,6 @@
         session_destroy();
     }
     public function  show404(){
-        require_once("view/404.php");
+        require_once("src/view/404.php");
     }
 }

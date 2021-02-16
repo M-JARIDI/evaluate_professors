@@ -1,8 +1,8 @@
 <?php 
 
-require_once("exception/UserNotFoundException.php");
-require_once("controller/UserController.php");
-require_once("controller/RateController.php");
+require_once("src/exception/UserNotFoundException.php");
+require_once("src/controller/UserController.php");
+require_once("src/controller/RateController.php");
 $userController =new UserController();
 $rateController=new RateController();
 if(isset($_GET['action'])){

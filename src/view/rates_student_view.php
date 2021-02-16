@@ -1,31 +1,17 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avis</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
-          crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
-            crossorigin="anonymous"></script>
-    <style text="css">
-        .center {
-            width: 50%;
-            margin: 0 auto;
-        }
-    </style>
-    <link rel="stylesheet" href="public/style.css" />
-</head>
+<?php 
+include("header.php");
+?>
 <body>
     <div class="container">
-        <a style="float: right;" href="index.php?action=logout">
-            <button  type="" class="btn btn-danger" name="deconnexion" style="margin-top:10px">Déconnexion</button>
-        </a>
         <div class="row">
-            <a href="index.html"><img id="eilco-logo" class="img-fluid" src="public/img/eilco.png" alt="EILCO"/></a>
+            <div class="col">
+                <a href="index.php?action=logout">
+                    <button class="btn btn-danger float-right" style="margin-top:10px; margin-left : 10px">Déconnexion</button>
+                </a>
+                <a href="index.php?action=rates_save_form">
+                    <button class="btn btn-primary float-right" style="margin-top:10px;">retour</button>
+                </a>
+            </div>
         </div>
         <div class="row">
             <div class="card-body">
@@ -62,17 +48,20 @@
                     echo"<td > $nom_complet </td>";
                     echo "<td>";
                     for($j=0; $j<$note; $j++)
-                        echo '<img src="public/img/star.png" height="40" width="40">';
+                        echo '<img src="src/public/img/star.png" height="40" width="40">';
                     echo "</td>";
                     echo"<td > $avis </td>";
-                    echo"<td ><a href=\"index.php?action=update_form&id=$id_prof\"><button class='btn-primary'>Update</button></a></td>";
+                    echo"<td ><a href=\"index.php?action=update_form&id=$id_prof\"><button class='btn btn-primary'>Update</button></a></td>";
+                    echo"<td ><a href=\"#\"><button class='btn btn-danger'>delete</button></a></td>";
                     echo"</tr>";
                 }
             ?>
         </tbody>
     </table>
-    <a href="index.php?action=rates_save_form"><button class="btn-primary" style="margin-bottom: 15px">retour</button></a>
     </div>
+    <?php
+	include("footer.php");
+	?>
 </body>
 </html>
 

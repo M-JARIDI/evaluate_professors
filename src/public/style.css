@@ -1,0 +1,106 @@
+body {
+    height: 100vh;
+    background: #eee;
+    font-family: 'Noto Sans', sans-serif;
+    overflow: scroll;
+    
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid #45aaf2;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+}
+.rates-container, .update-container, .prof-view-container {
+    width: 50%;
+    height: 80%;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid #45aaf2;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+}
+
+.form-container {
+    margin-top: 2em;
+}
+
+.form-card-body {
+    margin-top: 2em;
+    background: #fff;
+    border: 1px solid #45aaf2;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+}
+
+.form-login {
+    position: relative;
+    border: 1px solid #45aaf2;
+    border-radius: 7px;
+    margin-top: 30px;
+    height: 55px;
+    padding: 2px;
+}
+
+.form-login label {
+    position: absolute;
+    bottom: 28px;
+    left: 20px;
+    padding: 3px 6px 3px 6px;
+    background: #fff;
+    border: 1px solid #45aaf2;
+    border-radius: 7px;
+}
+
+.form-login .form-input {
+    position: relative;
+}
+
+.form-group .form-input .form-control {
+    position: absolute;
+    top: 15px;
+    width: 88%;
+    border:none;
+    box-shadow: none;
+    background: none;
+}
+
+.eye {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+.eye:hover {
+    color:  #1b9cf8;
+}
+
+footer {
+    height: 10vh;
+    margin-top: 1.5em;
+}
+
+.list-inline {
+    margin-top: 1em;
+}
+
+.list-inline .list-inline-item {
+    padding-left: 20px;
+}
+
+.btn {
+    transition: ease 0.3s;
+}
+
+.btn:hover {
+    transform:scale(1.1,1.1);
+    -webkit-transform:scale(1.1,1.1);
+    -moz-transform:scale(1.1,1.1);  
+}
+
+#submitButton:hover {
+    transform:scale(1.2,1.2);
+    -webkit-transform:scale(1.2,1.2);
+    -moz-transform:scale(1.2,1.2);  
+}
