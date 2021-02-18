@@ -4,7 +4,7 @@ require_once('src/exception/ProfAlreadyRatedException.php');
 require_once('src/exception/RateDoesntExistException.php');
 
 class RateController{
-    //Functions to show views
+
    public function showProfRatesView($profId){
         $rates=RateRepository::findRateByProfId($profId);
         require('src/view/rates_prof_view.php');
@@ -27,7 +27,7 @@ class RateController{
         require('src/view/rates_save_form.php');
     }
 
-    //Functions to add and update rates
+   //Functions to add and update rates
    public function saveRate($note,$text,$studentId,$profId){
         $rate=RateRepository::findRateByStudentProfId($studentId,$profId);
         if(count($rate)==0){

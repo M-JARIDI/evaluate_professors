@@ -1,10 +1,9 @@
-<?php 
-include("header.php");
-?>
+<?php include("header.php");?>
 <body>
-	<div class="form-container">
+	<div>
 		<div class="row">
 			<div class="col-4 offset-4">
+			  <div id="toSlideDown-container" style="height: 320px; width: 450px; margin-top: 2em">
 				<div class="card-body form-card-body">
 						<h5 class="card-header"><b>Se connecter</b></h5>
 						<form action="index.php?action=login" method="post">
@@ -16,13 +15,13 @@ include("header.php");
 								if($erreur)
 									echo"<div class='alert-warning'>Username or password Incorrecte</div>";
 							?>
-							<div class="form-group form-login">
+							<div class="form-group form-login-fields">
 								<label><b>Identifiant</b> </label>
 								<div class="form-input">
 									<input type="text" id="text" name="username" class="form-control" placeholder="pseudo" required>
 								</div>
 							</div>
-							<div class="form-group form-login">
+							<div class="form-group form-login-fields">
 								<label><b>Mot de passe</b></label>
 								<div class="form-input">
 									<input type="password" class="form-control pwd" id="password" name="password" placeholder="mot de passe" required>
@@ -33,11 +32,10 @@ include("header.php");
 						</form>
 					</div>
 				</div>
+			  </div>
 			</div>
 		</div>
 	</div>
-	<?php
-	include("footer.php");
-	?>
+	<?php include("footer.php");?>
 </body>
 </html>

@@ -1,14 +1,15 @@
 body {
-    height: 100vh;
     background: #eee;
     font-family: 'Noto Sans', sans-serif;
-    overflow: scroll;
-    
+}
+
+footer {
+    margin-top: 2%;
 }
 
 .container {
     width: 80%;
-    height: 80%;
+    height: 100%;
     margin-top: 30px;
     border-radius: 5px;
     border: 1px solid #45aaf2;
@@ -16,25 +17,20 @@ body {
 }
 .rates-container, .update-container, .prof-view-container {
     width: 50%;
-    height: 80%;
+    height: 100%;
     margin-top: 30px;
     border-radius: 5px;
     border: 1px solid #45aaf2;
     box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
 }
 
-.form-container {
-    margin-top: 2em;
-}
-
 .form-card-body {
-    margin-top: 2em;
     background: #fff;
     border: 1px solid #45aaf2;
     box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
 }
 
-.form-login {
+.form-login-fields {
     position: relative;
     border: 1px solid #45aaf2;
     border-radius: 7px;
@@ -43,7 +39,7 @@ body {
     padding: 2px;
 }
 
-.form-login label {
+.form-login-fields label {
     position: absolute;
     bottom: 28px;
     left: 20px;
@@ -53,7 +49,7 @@ body {
     border-radius: 7px;
 }
 
-.form-login .form-input {
+.form-login-fields .form-input {
     position: relative;
 }
 
@@ -74,19 +70,6 @@ body {
 
 .eye:hover {
     color:  #1b9cf8;
-}
-
-footer {
-    height: 10vh;
-    margin-top: 1.5em;
-}
-
-.list-inline {
-    margin-top: 1em;
-}
-
-.list-inline .list-inline-item {
-    padding-left: 20px;
 }
 
 .btn {

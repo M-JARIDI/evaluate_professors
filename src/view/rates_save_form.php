@@ -1,7 +1,5 @@
 
-<?php 
-include("header.php");
-?>
+<?php include("header.php");?>
 <body>
     <div class="container rates-container">
         <div class="row">
@@ -16,6 +14,7 @@ include("header.php");
         </div>
         <div class="row">
             <div class="col-10 offset-1">
+              <div style="height:524px; width:482px">
                 <div class="card-body">
                     <h5 class="card-header">Votre avis</h5>
                     <form action="index.php?action=save_rate" method="post">
@@ -55,11 +54,10 @@ include("header.php");
                         </div>
                     </div>
                 </div>
+              </div>
             </div>
         </div>
     </div>
-    <?php
-	include("footer.php");
-	?>
+    <?php include("footer.php");?>
 </body>
 </html>
